@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10C483D7AB76086A8676B7EA /* libPods-YYFMDBAdapterDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 286C5DCF6D64F28F77B66275 /* libPods-YYFMDBAdapterDemoTests.a */; };
+		46FDD0BBB4D524517DEC0401 /* libPods-YYFMDBAdapterDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 764A597BF33F80E384173016 /* libPods-YYFMDBAdapterDemo.a */; };
+		C42294261E65283B002F842E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C42294251E65283B002F842E /* main.m */; };
+		C42294291E65283B002F842E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C42294281E65283B002F842E /* AppDelegate.m */; };
+		C422942C1E65283B002F842E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C422942B1E65283B002F842E /* ViewController.m */; };
+		C422942F1E65283B002F842E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C422942D1E65283B002F842E /* Main.storyboard */; };
+		C42294311E65283B002F842E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C42294301E65283B002F842E /* Assets.xcassets */; };
+		C42294341E65283B002F842E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C42294321E65283B002F842E /* LaunchScreen.storyboard */; };
+		C422943F1E65283B002F842E /* YYFMDBAdapterDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C422943E1E65283B002F842E /* YYFMDBAdapterDemoTests.m */; };
+		C422944C1E6529C9002F842E /* YYFMDBAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = C422944B1E6529C9002F842E /* YYFMDBAdapter.m */; };
+		C42294501E652D65002F842E /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = C422944F1E652D65002F842E /* Animal.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C422943B1E65283B002F842E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C42294191E65283B002F842E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C42294201E65283B002F842E;
+			remoteInfo = YYFMDBAdapterDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		286C5DCF6D64F28F77B66275 /* libPods-YYFMDBAdapterDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YYFMDBAdapterDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		55C37E5015FD1C8528A4504D /* Pods-YYFMDBAdapterDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYFMDBAdapterDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-YYFMDBAdapterDemo/Pods-YYFMDBAdapterDemo.release.xcconfig"; sourceTree = "<group>"; };
+		764A597BF33F80E384173016 /* libPods-YYFMDBAdapterDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YYFMDBAdapterDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C09C85F03F9DDE6876B15C13 /* Pods-YYFMDBAdapterDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYFMDBAdapterDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YYFMDBAdapterDemoTests/Pods-YYFMDBAdapterDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C18D601BC6F7230E93B12054 /* Pods-YYFMDBAdapterDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYFMDBAdapterDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YYFMDBAdapterDemoTests/Pods-YYFMDBAdapterDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		C42294211E65283B002F842E /* YYFMDBAdapterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYFMDBAdapterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C42294251E65283B002F842E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C42294271E65283B002F842E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C42294281E65283B002F842E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C422942A1E65283B002F842E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C422942B1E65283B002F842E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C422942E1E65283B002F842E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C42294301E65283B002F842E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C42294331E65283B002F842E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C42294351E65283B002F842E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C422943A1E65283B002F842E /* YYFMDBAdapterDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YYFMDBAdapterDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C422943E1E65283B002F842E /* YYFMDBAdapterDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYFMDBAdapterDemoTests.m; sourceTree = "<group>"; };
+		C42294401E65283B002F842E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C422944A1E6529C9002F842E /* YYFMDBAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFMDBAdapter.h; sourceTree = "<group>"; };
+		C422944B1E6529C9002F842E /* YYFMDBAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFMDBAdapter.m; sourceTree = "<group>"; };
+		C422944E1E652D65002F842E /* Animal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
+		C422944F1E652D65002F842E /* Animal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
+		CDCAC384D5948128B26FBDE0 /* Pods-YYFMDBAdapterDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYFMDBAdapterDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YYFMDBAdapterDemo/Pods-YYFMDBAdapterDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C422941E1E65283B002F842E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46FDD0BBB4D524517DEC0401 /* libPods-YYFMDBAdapterDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C42294371E65283B002F842E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10C483D7AB76086A8676B7EA /* libPods-YYFMDBAdapterDemoTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11DB38D24924C2065B81726A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CDCAC384D5948128B26FBDE0 /* Pods-YYFMDBAdapterDemo.debug.xcconfig */,
+				55C37E5015FD1C8528A4504D /* Pods-YYFMDBAdapterDemo.release.xcconfig */,
+				C09C85F03F9DDE6876B15C13 /* Pods-YYFMDBAdapterDemoTests.debug.xcconfig */,
+				C18D601BC6F7230E93B12054 /* Pods-YYFMDBAdapterDemoTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		79CB74B495D8338758BB2D80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				764A597BF33F80E384173016 /* libPods-YYFMDBAdapterDemo.a */,
+				286C5DCF6D64F28F77B66275 /* libPods-YYFMDBAdapterDemoTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C42294181E65283B002F842E = {
+			isa = PBXGroup;
+			children = (
+				C42294491E65285B002F842E /* YYFMDBAdapter */,
+				C42294231E65283B002F842E /* YYFMDBAdapterDemo */,
+				C422943D1E65283B002F842E /* YYFMDBAdapterDemoTests */,
+				C42294221E65283B002F842E /* Products */,
+				11DB38D24924C2065B81726A /* Pods */,
+				79CB74B495D8338758BB2D80 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C42294221E65283B002F842E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C42294211E65283B002F842E /* YYFMDBAdapterDemo.app */,
+				C422943A1E65283B002F842E /* YYFMDBAdapterDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C42294231E65283B002F842E /* YYFMDBAdapterDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C422944E1E652D65002F842E /* Animal.h */,
+				C422944F1E652D65002F842E /* Animal.m */,
+				C42294271E65283B002F842E /* AppDelegate.h */,
+				C42294281E65283B002F842E /* AppDelegate.m */,
+				C422942A1E65283B002F842E /* ViewController.h */,
+				C422942B1E65283B002F842E /* ViewController.m */,
+				C422942D1E65283B002F842E /* Main.storyboard */,
+				C42294301E65283B002F842E /* Assets.xcassets */,
+				C42294321E65283B002F842E /* LaunchScreen.storyboard */,
+				C42294351E65283B002F842E /* Info.plist */,
+				C42294241E65283B002F842E /* Supporting Files */,
+			);
+			path = YYFMDBAdapterDemo;
+			sourceTree = "<group>";
+		};
+		C42294241E65283B002F842E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C42294251E65283B002F842E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C422943D1E65283B002F842E /* YYFMDBAdapterDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				C422943E1E65283B002F842E /* YYFMDBAdapterDemoTests.m */,
+				C42294401E65283B002F842E /* Info.plist */,
+			);
+			path = YYFMDBAdapterDemoTests;
+			sourceTree = "<group>";
+		};
+		C42294491E65285B002F842E /* YYFMDBAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				C422944A1E6529C9002F842E /* YYFMDBAdapter.h */,
+				C422944B1E6529C9002F842E /* YYFMDBAdapter.m */,
+			);
+			path = YYFMDBAdapter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C42294201E65283B002F842E /* YYFMDBAdapterDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C42294431E65283B002F842E /* Build configuration list for PBXNativeTarget "YYFMDBAdapterDemo" */;
+			buildPhases = (
+				15A76C60EC130D7BA174AFE6 /* [CP] Check Pods Manifest.lock */,
+				C422941D1E65283B002F842E /* Sources */,
+				C422941E1E65283B002F842E /* Frameworks */,
+				C422941F1E65283B002F842E /* Resources */,
+				EF090842743ED4A543F6041E /* [CP] Embed Pods Frameworks */,
+				C0E9E9FFD245BA2BE22B57BF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YYFMDBAdapterDemo;
+			productName = YYFMDBAdapterDemo;
+			productReference = C42294211E65283B002F842E /* YYFMDBAdapterDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C42294391E65283B002F842E /* YYFMDBAdapterDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C42294461E65283B002F842E /* Build configuration list for PBXNativeTarget "YYFMDBAdapterDemoTests" */;
+			buildPhases = (
+				041C71A56267A836A11E0006 /* [CP] Check Pods Manifest.lock */,
+				C42294361E65283B002F842E /* Sources */,
+				C42294371E65283B002F842E /* Frameworks */,
+				C42294381E65283B002F842E /* Resources */,
+				0B5CDB20A555F96A9DE8F582 /* [CP] Embed Pods Frameworks */,
+				ADF7544FDD6B63BDCF3E4CE3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C422943C1E65283B002F842E /* PBXTargetDependency */,
+			);
+			name = YYFMDBAdapterDemoTests;
+			productName = YYFMDBAdapterDemoTests;
+			productReference = C422943A1E65283B002F842E /* YYFMDBAdapterDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C42294191E65283B002F842E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = wenbobao;
+				TargetAttributes = {
+					C42294201E65283B002F842E = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					C42294391E65283B002F842E = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C42294201E65283B002F842E;
+					};
+				};
+			};
+			buildConfigurationList = C422941C1E65283B002F842E /* Build configuration list for PBXProject "YYFMDBAdapterDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C42294181E65283B002F842E;
+			productRefGroup = C42294221E65283B002F842E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C42294201E65283B002F842E /* YYFMDBAdapterDemo */,
+				C42294391E65283B002F842E /* YYFMDBAdapterDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C422941F1E65283B002F842E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C42294341E65283B002F842E /* LaunchScreen.storyboard in Resources */,
+				C42294311E65283B002F842E /* Assets.xcassets in Resources */,
+				C422942F1E65283B002F842E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C42294381E65283B002F842E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		041C71A56267A836A11E0006 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		0B5CDB20A555F96A9DE8F582 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YYFMDBAdapterDemoTests/Pods-YYFMDBAdapterDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		15A76C60EC130D7BA174AFE6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ADF7544FDD6B63BDCF3E4CE3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YYFMDBAdapterDemoTests/Pods-YYFMDBAdapterDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0E9E9FFD245BA2BE22B57BF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YYFMDBAdapterDemo/Pods-YYFMDBAdapterDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF090842743ED4A543F6041E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YYFMDBAdapterDemo/Pods-YYFMDBAdapterDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C422941D1E65283B002F842E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C422942C1E65283B002F842E /* ViewController.m in Sources */,
+				C42294291E65283B002F842E /* AppDelegate.m in Sources */,
+				C42294501E652D65002F842E /* Animal.m in Sources */,
+				C422944C1E6529C9002F842E /* YYFMDBAdapter.m in Sources */,
+				C42294261E65283B002F842E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C42294361E65283B002F842E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C422943F1E65283B002F842E /* YYFMDBAdapterDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C422943C1E65283B002F842E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C42294201E65283B002F842E /* YYFMDBAdapterDemo */;
+			targetProxy = C422943B1E65283B002F842E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C422942D1E65283B002F842E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C422942E1E65283B002F842E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C42294321E65283B002F842E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C42294331E65283B002F842E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C42294411E65283B002F842E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C42294421E65283B002F842E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C42294441E65283B002F842E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDCAC384D5948128B26FBDE0 /* Pods-YYFMDBAdapterDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YYFMDBAdapterDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YD.YYFMDBAdapterDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C42294451E65283B002F842E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55C37E5015FD1C8528A4504D /* Pods-YYFMDBAdapterDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YYFMDBAdapterDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YD.YYFMDBAdapterDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C42294471E65283B002F842E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C09C85F03F9DDE6876B15C13 /* Pods-YYFMDBAdapterDemoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YYFMDBAdapterDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YD.YYFMDBAdapterDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YYFMDBAdapterDemo.app/YYFMDBAdapterDemo";
+			};
+			name = Debug;
+		};
+		C42294481E65283B002F842E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C18D601BC6F7230E93B12054 /* Pods-YYFMDBAdapterDemoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YYFMDBAdapterDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YD.YYFMDBAdapterDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YYFMDBAdapterDemo.app/YYFMDBAdapterDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C422941C1E65283B002F842E /* Build configuration list for PBXProject "YYFMDBAdapterDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C42294411E65283B002F842E /* Debug */,
+				C42294421E65283B002F842E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C42294431E65283B002F842E /* Build configuration list for PBXNativeTarget "YYFMDBAdapterDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C42294441E65283B002F842E /* Debug */,
+				C42294451E65283B002F842E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C42294461E65283B002F842E /* Build configuration list for PBXNativeTarget "YYFMDBAdapterDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C42294471E65283B002F842E /* Debug */,
+				C42294481E65283B002F842E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C42294191E65283B002F842E /* Project object */;
+}
