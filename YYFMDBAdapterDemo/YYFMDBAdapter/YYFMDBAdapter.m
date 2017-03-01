@@ -84,7 +84,7 @@
         }
     }
     
-    NSString *statement = [NSString stringWithFormat:@"insert into %@ (%@) values (%@)", [model.class FMDBTableName], [stats componentsJoinedByString:@", "], [qmarks componentsJoinedByString:@", "]];
+    NSString *statement = [NSString stringWithFormat:@"insert into %@ (%@) values (%@)", [self tableNameForModel:model], [stats componentsJoinedByString:@", "], [qmarks componentsJoinedByString:@", "]];
     
     return statement;
 }
@@ -108,13 +108,13 @@
         }
     }
     
-    return [NSString stringWithFormat:@"update %@ set %@ where %@", [model.class FMDBTableName], [stats componentsJoinedByString:@", "], [self whereStatementForModel:model]];
+    return [NSString stringWithFormat:@"update %@ set %@ where %@",  [self tableNameForModel:model], [stats componentsJoinedByString:@", "], [self whereStatementForModel:model]];
 }
 
 + (NSString *)deleteStatementForModel:(NSObject<YYFMDBSerializing> *)model {
     NSParameterAssert([model.class conformsToProtocol:@protocol(YYFMDBSerializing)]);
     
-    return [NSString stringWithFormat:@"delete from %@ where %@", [model.class FMDBTableName], [self whereStatementForModel:model]];
+    return [NSString stringWithFormat:@"delete from %@ where %@",  [self tableNameForModel:model], [self whereStatementForModel:model]];
 }
 
 + (NSString *)whereStatementForModel:(NSObject<YYFMDBSerializing> *)model
@@ -129,11 +129,22 @@
     return [where componentsJoinedByString:@" AND "];
 }
 
++ (NSString *)tableNameForModel:(NSObject<YYFMDBSerializing> *)model
+{
+    NSParameterAssert([model.class conformsToProtocol:@protocol(YYFMDBSerializing)]);
+
+    NSString *tableName = NSStringFromClass(model.class);
+    if ([model.class respondsToSelector:@selector(FMDBTableName)]) {
+        tableName = [(id<YYFMDBSerializing>)model.class FMDBTableName];
+    }
+    return tableName;
+}
+
 + (NSString *)createTableStatementForModel:(NSObject<YYFMDBSerializing> *)model
 {
     NSParameterAssert([model.class conformsToProtocol:@protocol(YYFMDBSerializing)]);
     
-    NSMutableString *resultString = [NSMutableString stringWithFormat:@"create table if not exists %@ ", [model.class FMDBTableName]];
+    NSMutableString *resultString = [NSMutableString stringWithFormat:@"create table if not exists %@ ",  [self tableNameForModel:model]];
     
     [resultString appendString:[NSString stringWithFormat:@"( %@ integer primary key", [model.class FMDBPrimaryKey]]];
     
